@@ -37,6 +37,7 @@ namespace SIP
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
             this.Login = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnKeluar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,12 +135,28 @@ namespace SIP
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnKeluar
+            // 
+            this.btnKeluar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(173)))), ((int)(((byte)(198)))));
+            this.btnKeluar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKeluar.FlatAppearance.BorderSize = 0;
+            this.btnKeluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKeluar.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeluar.Location = new System.Drawing.Point(247, 12);
+            this.btnKeluar.Name = "btnKeluar";
+            this.btnKeluar.Size = new System.Drawing.Size(30, 32);
+            this.btnKeluar.TabIndex = 9;
+            this.btnKeluar.Text = "X";
+            this.btnKeluar.UseVisualStyleBackColor = false;
+            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(173)))), ((int)(((byte)(198)))));
             this.ClientSize = new System.Drawing.Size(289, 489);
+            this.Controls.Add(this.btnKeluar);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.checkbxShowPas);
@@ -171,6 +188,7 @@ namespace SIP
         private System.Windows.Forms.CheckBox checkbxShowPas;
         private System.Windows.Forms.Button Login;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnKeluar;
     }
 }
 

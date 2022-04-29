@@ -91,5 +91,10 @@ namespace SIP
 
             txtUsername.Focus();
         }
+
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

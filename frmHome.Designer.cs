@@ -99,6 +99,7 @@ namespace SIP
             this.btnKeluar.TabIndex = 4;
             this.btnKeluar.Text = "Keluar";
             this.btnKeluar.UseVisualStyleBackColor = true;
+            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click_1);
             // 
             // btnPengembalian
             // 

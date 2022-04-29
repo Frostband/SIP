@@ -42,5 +42,10 @@ namespace SIP
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void btnKeluar_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
