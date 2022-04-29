@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2022 at 10:59 AM
+-- Generation Time: Apr 29, 2022 at 09:03 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `admin_id` int(15) NOT NULL,
-  `username` varchar(30) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `password` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -40,12 +40,12 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `buku` (
-  `isbn` int(10) UNSIGNED NOT NULL,
-  `judul` varchar(30) NOT NULL,
-  `pengarang` varchar(30) NOT NULL,
-  `penerbit` varchar(30) NOT NULL,
-  `tahun_terbit` int(10) NOT NULL,
-  `tanggal_masuk` datetime NOT NULL
+  `isbn` int(15) NOT NULL,
+  `judul` varchar(20) NOT NULL,
+  `pengarang` varchar(15) NOT NULL,
+  `penerbit` varchar(15) NOT NULL,
+  `tgl_terbit` year(4) NOT NULL,
+  `tgl_masuk` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -56,8 +56,23 @@ CREATE TABLE `buku` (
 
 CREATE TABLE `staff` (
   `staff_id` int(15) NOT NULL,
-  `username` varchar(30) NOT NULL,
+  `username` varchar(20) NOT NULL,
   `password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transaksi`
+--
+
+CREATE TABLE `transaksi` (
+  `trans_id` int(10) NOT NULL,
+  `isbn` int(15) NOT NULL,
+  `nim` varchar(9) NOT NULL,
+  `tgl_pinjam` date NOT NULL,
+  `tgl_kembali` date NOT NULL,
+  `set_tgl_kembali` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -67,8 +82,8 @@ CREATE TABLE `staff` (
 --
 
 CREATE TABLE `user` (
-  `nim` char(9) NOT NULL,
-  `nama` varchar(30) NOT NULL,
+  `nim` varchar(9) NOT NULL,
+  `nama` varchar(20) NOT NULL,
   `no_hp` int(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -95,6 +110,14 @@ ALTER TABLE `staff`
   ADD PRIMARY KEY (`staff_id`);
 
 --
+-- Indexes for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD PRIMARY KEY (`trans_id`),
+  ADD KEY `isbn` (`isbn`),
+  ADD KEY `nim` (`nim`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -111,16 +134,27 @@ ALTER TABLE `admin`
   MODIFY `admin_id` int(15) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `buku`
---
-ALTER TABLE `buku`
-  MODIFY `isbn` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
   MODIFY `staff_id` int(15) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  MODIFY `trans_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`nim`) REFERENCES `user` (`nim`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `transaksi_ibfk_2` FOREIGN KEY (`isbn`) REFERENCES `buku` (`isbn`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
