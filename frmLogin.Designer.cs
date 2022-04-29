@@ -36,6 +36,7 @@ namespace SIP
             this.label3 = new System.Windows.Forms.Label();
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
             this.Login = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -117,7 +118,21 @@ namespace SIP
             this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = false;
             this.Login.Click += new System.EventHandler(this.Login_Click);
-            
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(35, 403);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(219, 28);
+            this.btnClear.TabIndex = 8;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmLogin
             // 
@@ -125,6 +140,7 @@ namespace SIP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(173)))), ((int)(((byte)(198)))));
             this.ClientSize = new System.Drawing.Size(289, 489);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.checkbxShowPas);
             this.Controls.Add(this.txtPassword);
@@ -139,6 +155,7 @@ namespace SIP
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +170,7 @@ namespace SIP
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkbxShowPas;
         private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

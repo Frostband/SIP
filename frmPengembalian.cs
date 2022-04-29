@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace SIP
 {
-    public partial class frmPeminjaman : Form
+    public partial class frmPengembalian : Form
     {
-        public frmPeminjaman()
+        public frmPengembalian()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

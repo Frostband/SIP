@@ -32,19 +32,19 @@ namespace SIP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.mainpanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelHeader = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnPeminjaman = new System.Windows.Forms.Button();
-            this.btnPengembalian = new System.Windows.Forms.Button();
             this.btnKeluar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelAkun = new System.Windows.Forms.Label();
+            this.btnPengembalian = new System.Windows.Forms.Button();
+            this.btnPeminjaman = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.panelHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelAkun = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.mainpanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,20 +75,6 @@ namespace SIP
             this.panel1.Size = new System.Drawing.Size(200, 380);
             this.panel1.TabIndex = 0;
             // 
-            // panelHeader
-            // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(173)))), ((int)(((byte)(198)))));
-            this.panelHeader.Controls.Add(this.label1);
-            this.panelHeader.Controls.Add(this.labelAkun);
-            this.panelHeader.Controls.Add(this.pictureBox2);
-            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelHeader.ForeColor = System.Drawing.Color.White;
-            this.panelHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(800, 70);
-            this.panelHeader.TabIndex = 1;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -98,51 +84,6 @@ namespace SIP
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnHome
-            // 
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Image = global::SIP.Properties.Resources.outline_home_white_36;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 112);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(200, 35);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            // 
-            // btnPeminjaman
-            // 
-            this.btnPeminjaman.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPeminjaman.FlatAppearance.BorderSize = 0;
-            this.btnPeminjaman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPeminjaman.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPeminjaman.Image = global::SIP.Properties.Resources.book_white_36;
-            this.btnPeminjaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPeminjaman.Location = new System.Drawing.Point(0, 173);
-            this.btnPeminjaman.Name = "btnPeminjaman";
-            this.btnPeminjaman.Size = new System.Drawing.Size(200, 35);
-            this.btnPeminjaman.TabIndex = 2;
-            this.btnPeminjaman.Text = "Peminjaman";
-            this.btnPeminjaman.UseVisualStyleBackColor = true;
-            // 
-            // btnPengembalian
-            // 
-            this.btnPengembalian.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPengembalian.FlatAppearance.BorderSize = 0;
-            this.btnPengembalian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPengembalian.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPengembalian.Image = global::SIP.Properties.Resources.book_stack_white_36;
-            this.btnPengembalian.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPengembalian.Location = new System.Drawing.Point(0, 236);
-            this.btnPengembalian.Name = "btnPengembalian";
-            this.btnPengembalian.Size = new System.Drawing.Size(200, 35);
-            this.btnPengembalian.TabIndex = 3;
-            this.btnPengembalian.Text = "Pengembalian";
-            this.btnPengembalian.UseVisualStyleBackColor = true;
             // 
             // btnKeluar
             // 
@@ -159,15 +100,73 @@ namespace SIP
             this.btnKeluar.Text = "Keluar";
             this.btnKeluar.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // btnPengembalian
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(730, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.btnPengembalian.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPengembalian.FlatAppearance.BorderSize = 0;
+            this.btnPengembalian.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPengembalian.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPengembalian.Image = global::SIP.Properties.Resources.book_stack_white_36;
+            this.btnPengembalian.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPengembalian.Location = new System.Drawing.Point(0, 236);
+            this.btnPengembalian.Name = "btnPengembalian";
+            this.btnPengembalian.Size = new System.Drawing.Size(200, 35);
+            this.btnPengembalian.TabIndex = 3;
+            this.btnPengembalian.Text = "Pengembalian";
+            this.btnPengembalian.UseVisualStyleBackColor = true;
+            // 
+            // btnPeminjaman
+            // 
+            this.btnPeminjaman.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPeminjaman.FlatAppearance.BorderSize = 0;
+            this.btnPeminjaman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPeminjaman.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPeminjaman.Image = global::SIP.Properties.Resources.book_white_36;
+            this.btnPeminjaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPeminjaman.Location = new System.Drawing.Point(0, 173);
+            this.btnPeminjaman.Name = "btnPeminjaman";
+            this.btnPeminjaman.Size = new System.Drawing.Size(200, 35);
+            this.btnPeminjaman.TabIndex = 2;
+            this.btnPeminjaman.Text = "Peminjaman";
+            this.btnPeminjaman.UseVisualStyleBackColor = true;
+            // 
+            // btnHome
+            // 
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Image = global::SIP.Properties.Resources.outline_home_white_36;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 112);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(200, 35);
+            this.btnHome.TabIndex = 1;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(173)))), ((int)(((byte)(198)))));
+            this.panelHeader.Controls.Add(this.label1);
+            this.panelHeader.Controls.Add(this.labelAkun);
+            this.panelHeader.Controls.Add(this.pictureBox2);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelHeader.ForeColor = System.Drawing.Color.White;
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(800, 70);
+            this.panelHeader.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(286, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Sistem Informasi Perpustakaan";
             // 
             // labelAkun
             // 
@@ -178,14 +177,15 @@ namespace SIP
             this.labelAkun.TabIndex = 1;
             this.labelAkun.Text = "Name";
             // 
-            // label1
+            // pictureBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Sistem Informasi Perpustakaan";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(730, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // frmHome
             // 
@@ -199,9 +199,9 @@ namespace SIP
             this.Text = "lo";
             this.mainpanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
