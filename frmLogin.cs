@@ -54,6 +54,8 @@ namespace SIP
                     username = txtUsername.Text;
                     user_password = txtPassword.Text;
 
+                    MessageBox.Show("Berhasil Login", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     frmHome form = new frmHome();
                     form.Show();
                     this.Hide();
