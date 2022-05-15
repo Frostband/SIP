@@ -40,3 +40,5 @@ G:\Pelajaran\Pemrograman Visual\Repository\SIP\bin\Debug\System.Threading.Tasks.
 G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.csproj.CopyComplete
 G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.exe
 G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.pdb
+G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmDashboard.resources
+G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmSideMenu.resources

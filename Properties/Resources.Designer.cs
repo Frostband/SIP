@@ -83,6 +83,36 @@ namespace SIP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book_writing_white_36 {
+            get {
+                object obj = ResourceManager.GetObject("book_writing_white_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_custom_1_36 {
+            get {
+                object obj = ResourceManager.GetObject("button_custom_1_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_custom_1_361 {
+            get {
+                object obj = ResourceManager.GetObject("button_custom_1_361", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit_white_36 {
             get {
                 object obj = ResourceManager.GetObject("exit_white_36", resourceCulture);

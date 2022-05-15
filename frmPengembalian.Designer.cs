@@ -38,12 +38,15 @@ namespace SIP
             this.label1 = new System.Windows.Forms.Label();
             this.yellowbar = new System.Windows.Forms.PictureBox();
             this.yellowbar2 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.yellowbar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowbar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.Location = new System.Drawing.Point(265, 322);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 33);
@@ -53,6 +56,7 @@ namespace SIP
             // 
             // tglBalik
             // 
+            this.tglBalik.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tglBalik.Location = new System.Drawing.Point(366, 113);
             this.tglBalik.Name = "tglBalik";
             this.tglBalik.Size = new System.Drawing.Size(222, 29);
@@ -60,6 +64,7 @@ namespace SIP
             // 
             // isbnBox
             // 
+            this.isbnBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.isbnBox.Location = new System.Drawing.Point(366, 62);
             this.isbnBox.Name = "isbnBox";
             this.isbnBox.Size = new System.Drawing.Size(222, 29);
@@ -67,6 +72,7 @@ namespace SIP
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(13, 117);
@@ -78,6 +84,7 @@ namespace SIP
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 65);
@@ -89,6 +96,7 @@ namespace SIP
             // 
             // nimBox
             // 
+            this.nimBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nimBox.Location = new System.Drawing.Point(366, 10);
             this.nimBox.Name = "nimBox";
             this.nimBox.Size = new System.Drawing.Size(222, 29);
@@ -96,6 +104,7 @@ namespace SIP
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,6 +118,7 @@ namespace SIP
             // 
             // yellowbar
             // 
+            this.yellowbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.yellowbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.yellowbar.Location = new System.Drawing.Point(0, 0);
@@ -119,6 +129,7 @@ namespace SIP
             // 
             // yellowbar2
             // 
+            this.yellowbar2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowbar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.yellowbar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.yellowbar2.Location = new System.Drawing.Point(0, 102);
@@ -127,11 +138,20 @@ namespace SIP
             this.yellowbar2.TabIndex = 22;
             this.yellowbar2.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 166);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(576, 150);
+            this.dataGridView1.TabIndex = 23;
+            // 
             // frmPengembalian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 380);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.tglBalik);
             this.Controls.Add(this.isbnBox);
@@ -145,9 +165,11 @@ namespace SIP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPengembalian";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPengembalian";
             ((System.ComponentModel.ISupportInitialize)(this.yellowbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowbar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +186,6 @@ namespace SIP
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox yellowbar;
         private System.Windows.Forms.PictureBox yellowbar2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

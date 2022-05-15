@@ -56,7 +56,7 @@ namespace SIP
 
                     MessageBox.Show("Berhasil Login", "Login", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    frmHome form = new frmHome();
+                    frmDashboard form = new frmDashboard();
                     form.Show();
                     this.Hide();
                 }

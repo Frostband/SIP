@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SIP
 {
-    public partial class frmHome : Form
+    public partial class frmSideMenu1 : Form
     {
-        public frmHome()
+        public frmSideMenu1()
         {
             InitializeComponent();
         }

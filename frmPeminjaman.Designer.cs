@@ -46,6 +46,7 @@ namespace SIP
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -60,6 +61,7 @@ namespace SIP
             // 
             // nimBox
             // 
+            this.nimBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.nimBox.Location = new System.Drawing.Point(366, 10);
             this.nimBox.Name = "nimBox";
             this.nimBox.Size = new System.Drawing.Size(222, 29);
@@ -67,6 +69,7 @@ namespace SIP
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 65);
@@ -78,6 +81,7 @@ namespace SIP
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -91,6 +95,7 @@ namespace SIP
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(13, 166);
@@ -102,6 +107,7 @@ namespace SIP
             // 
             // isbnBox
             // 
+            this.isbnBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.isbnBox.Location = new System.Drawing.Point(366, 62);
             this.isbnBox.Name = "isbnBox";
             this.isbnBox.Size = new System.Drawing.Size(222, 29);
@@ -109,6 +115,7 @@ namespace SIP
             // 
             // tglPinjam
             // 
+            this.tglPinjam.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tglPinjam.Location = new System.Drawing.Point(366, 113);
             this.tglPinjam.Name = "tglPinjam";
             this.tglPinjam.Size = new System.Drawing.Size(222, 29);
@@ -116,6 +123,7 @@ namespace SIP
             // 
             // tglBalikSet
             // 
+            this.tglBalikSet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tglBalikSet.Location = new System.Drawing.Point(366, 163);
             this.tglBalikSet.Name = "tglBalikSet";
             this.tglBalikSet.Size = new System.Drawing.Size(222, 29);
@@ -123,6 +131,7 @@ namespace SIP
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.Location = new System.Drawing.Point(265, 322);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 33);
@@ -133,6 +142,7 @@ namespace SIP
             // 
             // yellowbar
             // 
+            this.yellowbar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.yellowbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.yellowbar.Location = new System.Drawing.Point(0, 0);
@@ -143,6 +153,7 @@ namespace SIP
             // 
             // yellowbar2
             // 
+            this.yellowbar2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.yellowbar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(208)))), ((int)(((byte)(44)))));
             this.yellowbar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.yellowbar2.Location = new System.Drawing.Point(0, 102);
@@ -171,6 +182,7 @@ namespace SIP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmPeminjaman";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPeminjaman";
             ((System.ComponentModel.ISupportInitialize)(this.yellowbar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yellowbar2)).EndInit();

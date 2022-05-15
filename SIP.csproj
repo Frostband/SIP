@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,8 +128,23 @@
     <Compile Include="frmPengembalian.Designer.cs">
       <DependentUpon>frmPengembalian.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSideMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSideMenu2.Designer.cs">
+      <DependentUpon>frmSideMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSideMenu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSideMenu1.Designer.cs">
+      <DependentUpon>frmSideMenu1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,9 +157,16 @@
     <EmbeddedResource Include="frmPengembalian.resx">
       <DependentUpon>frmPengembalian.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSideMenu1.resx">
+      <DependentUpon>frmSideMenu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSideMenu2.resx">
+      <DependentUpon>frmSideMenu2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -166,10 +194,10 @@
     <None Include="Resources\book_white_36.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\exit_white_36.png" />
+    <None Include="Resources\outline_home_white_36.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\outline_home_white_36.png" />
+    <None Include="Resources\book_writing_white_36.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
