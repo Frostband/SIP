@@ -41,4 +41,6 @@ G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.csproj.CopyComplete
 G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.exe
 G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.pdb
 G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmDashboard.resources
-G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmSideMenu.resources
+G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmSideMenu1.resources
+G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmSideMenu2.resources
+G:\Pelajaran\Pemrograman Visual\Repository\SIP\obj\Debug\SIP.frmLaporan.resources

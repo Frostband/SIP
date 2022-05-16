@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace SIP
 {
-    public partial class frmSideMenu2 : Form
+    public partial class frmLaporan : Form
     {
-        public frmSideMenu2()
+        public frmLaporan()
         {
             InitializeComponent();
-        }
-
-        private void btnLaporan_Click(object sender, EventArgs e)
-        {
-            var mainForm = Application.OpenForms.OfType<frmDashboard>().Single();
-            mainForm.btnLaporan();
         }
     }
 }

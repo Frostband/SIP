@@ -47,8 +47,9 @@ namespace SIP
             this.btnLaporan.TabIndex = 2;
             this.btnLaporan.Text = "Laporan";
             this.btnLaporan.UseVisualStyleBackColor = true;
+            this.btnLaporan.Click += new System.EventHandler(this.btnLaporan_Click);
             // 
-            // frmSideMenu
+            // frmSideMenu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -59,7 +60,7 @@ namespace SIP
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmSideMenu";
+            this.Name = "frmSideMenu2";
             this.Text = "frmSideMenu";
             this.ResumeLayout(false);
 

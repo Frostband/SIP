@@ -49,6 +49,7 @@ namespace SIP
             this.btnPengembalian.Text = "Pengembalian";
             this.btnPengembalian.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPengembalian.UseVisualStyleBackColor = true;
+            this.btnPengembalian.Click += new System.EventHandler(this.btnPengembalian_Click);
             // 
             // btnPeminjaman
             // 
@@ -64,6 +65,7 @@ namespace SIP
             this.btnPeminjaman.TabIndex = 5;
             this.btnPeminjaman.Text = "Peminjaman";
             this.btnPeminjaman.UseVisualStyleBackColor = true;
+            this.btnPeminjaman.Click += new System.EventHandler(this.btnPeminjaman_Click);
             // 
             // btnHome
             // 
@@ -79,6 +81,7 @@ namespace SIP
             this.btnHome.TabIndex = 4;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // frmSideMenu1
             // 

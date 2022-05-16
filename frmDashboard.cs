@@ -12,6 +12,8 @@ namespace SIP
 {
     public partial class frmDashboard : Form
     {
+        int a;
+
         public frmDashboard()
         {
             InitializeComponent();
@@ -28,6 +30,26 @@ namespace SIP
             f.Show();
         }
 
+        public void btnHome()
+        {
+            loadform(new frmHome());
+        }
+
+        public void btnPeminjaman()
+        {
+            loadform(new frmPeminjaman());
+        }
+
+        public void btnPengembalian()
+        {
+            loadform(new frmPengembalian());
+        }
+
+        public void btnLaporan()
+        {
+            loadform(new frmLaporan());
+        }
+
         private void mainpanel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -38,28 +60,15 @@ namespace SIP
             System.Windows.Forms.Application.Exit();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            loadform(new frmHome());
-        }
-
-        private void btnPeminjaman_Click(object sender, EventArgs e)
-        {
-            loadform(new frmPeminjaman());
-        }
-
-        private void btnPengembalian_Click(object sender, EventArgs e)
-        {
-            loadform(new frmPengembalian());
-        }
+        
 
         private void frmDashboard_Load(object sender, EventArgs e)
         {
             loadform(new frmHome());
-            sidemenuloadform1(new frmSideMenu1());
+            sidemenuloadform(new frmSideMenu1());
         }
 
-        public void sidemenuloadform1(object Form)
+        public void sidemenuloadform(object Form)
         {
             if (this.panelMenu.Controls.Count > 0)
                 this.panelMenu.Controls.RemoveAt(0);
@@ -70,15 +79,17 @@ namespace SIP
             this.panelMenu.Tag = f;
             f.Show();
         }
-        int a = 0;
         private void btnSideMenuSwitch_Click(object sender, EventArgs e)
         {
-            if (btnSideMenuSwitch.Click)
-              int a++;
-            sidemenuloadform(new frmSideMenu2());
-            if (btnSideMenuSwitch.Click.) 
-                sidemenuloadform1(new frmSideMenu1());
-            
+            a++;
+            if (a % 2 != 0)
+            {
+                sidemenuloadform(new frmSideMenu2());
+            }
+            else
+            {
+                sidemenuloadform(new frmSideMenu1());
+            }          
         }
     }
 }
