@@ -33,18 +33,18 @@ namespace SIP
             this.panelHeader = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelAkun = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSide = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.mainpanel = new System.Windows.Forms.Panel();
             this.btnSideMenuSwitch = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKeluar = new System.Windows.Forms.Button();
-            this.mainpanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSideMenuSwitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -78,16 +78,7 @@ namespace SIP
             this.labelAkun.Size = new System.Drawing.Size(64, 25);
             this.labelAkun.TabIndex = 1;
             this.labelAkun.Text = "Name";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(730, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            
             // 
             // panelSide
             // 
@@ -110,6 +101,16 @@ namespace SIP
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(178, 159);
             this.panelMenu.TabIndex = 5;
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.BackColor = System.Drawing.Color.White;
+            this.mainpanel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainpanel.Location = new System.Drawing.Point(200, 70);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(600, 380);
+            this.mainpanel.TabIndex = 2;
+            
             // 
             // btnSideMenuSwitch
             // 
@@ -149,15 +150,15 @@ namespace SIP
             this.btnKeluar.UseVisualStyleBackColor = true;
             this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click_1);
             // 
-            // mainpanel
+            // pictureBox2
             // 
-            this.mainpanel.BackColor = System.Drawing.Color.White;
-            this.mainpanel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainpanel.Location = new System.Drawing.Point(200, 70);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(600, 380);
-            this.mainpanel.TabIndex = 2;
-            this.mainpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainpanel_Paint);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(730, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // frmDashboard
             // 
@@ -175,10 +176,10 @@ namespace SIP
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelSide.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnSideMenuSwitch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

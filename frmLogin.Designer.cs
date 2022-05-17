@@ -35,7 +35,7 @@ namespace SIP
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.checkbxShowPas = new System.Windows.Forms.CheckBox();
-            this.Login = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnKeluar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -71,6 +71,7 @@ namespace SIP
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(219, 28);
             this.txtUsername.TabIndex = 3;
+            this.txtUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsername_KeyDown);
             // 
             // txtPassword
             // 
@@ -83,6 +84,7 @@ namespace SIP
             this.txtPassword.PasswordChar = '•';
             this.txtPassword.Size = new System.Drawing.Size(219, 28);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // label3
             // 
@@ -106,19 +108,19 @@ namespace SIP
             this.checkbxShowPas.UseVisualStyleBackColor = true;
             this.checkbxShowPas.CheckedChanged += new System.EventHandler(this.checkbxShowPas_CheckedChanged);
             // 
-            // Login
+            // btnLogin
             // 
-            this.Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(54)))), ((int)(((byte)(82)))));
-            this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Login.FlatAppearance.BorderSize = 0;
-            this.Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login.Location = new System.Drawing.Point(35, 369);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(219, 28);
-            this.Login.TabIndex = 7;
-            this.Login.Text = "Login";
-            this.Login.UseVisualStyleBackColor = false;
-            this.Login.Click += new System.EventHandler(this.Login_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(54)))), ((int)(((byte)(82)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(35, 369);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(219, 28);
+            this.btnLogin.TabIndex = 7;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.Login_Click);
             // 
             // btnClear
             // 
@@ -158,7 +160,7 @@ namespace SIP
             this.ClientSize = new System.Drawing.Size(289, 489);
             this.Controls.Add(this.btnKeluar);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.Login);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.checkbxShowPas);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label3);
@@ -172,7 +174,6 @@ namespace SIP
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +187,7 @@ namespace SIP
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkbxShowPas;
-        private System.Windows.Forms.Button Login;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnKeluar;
     }

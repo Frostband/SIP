@@ -39,7 +39,7 @@ namespace SIP
             this.btnLaporan.FlatAppearance.BorderSize = 0;
             this.btnLaporan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLaporan.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLaporan.Image = global::SIP.Properties.Resources.book_writing_white_36;
+            this.btnLaporan.Image = global::SIP.Properties.Resources.book_white_36;
             this.btnLaporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLaporan.Location = new System.Drawing.Point(0, 0);
             this.btnLaporan.Name = "btnLaporan";

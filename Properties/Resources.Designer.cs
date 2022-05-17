@@ -123,6 +123,26 @@ namespace SIP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap expand_white_36 {
+            get {
+                object obj = ResourceManager.GetObject("expand_white_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap expand_white_inversed_36 {
+            get {
+                object obj = ResourceManager.GetObject("expand_white_inversed_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_home_white_36 {
             get {
                 object obj = ResourceManager.GetObject("outline_home_white_36", resourceCulture);

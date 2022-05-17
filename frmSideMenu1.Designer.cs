@@ -57,7 +57,7 @@ namespace SIP
             this.btnPeminjaman.FlatAppearance.BorderSize = 0;
             this.btnPeminjaman.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPeminjaman.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPeminjaman.Image = global::SIP.Properties.Resources.book_white_36;
+            this.btnPeminjaman.Image = global::SIP.Properties.Resources.book_writing_white_36;
             this.btnPeminjaman.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPeminjaman.Location = new System.Drawing.Point(2, 59);
             this.btnPeminjaman.Name = "btnPeminjaman";

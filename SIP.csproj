@@ -208,5 +208,11 @@
   <ItemGroup>
     <None Include="Resources\book_writing_white_36.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand_white_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\expand_white_inversed_36.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -48,12 +48,7 @@ namespace SIP
         public void btnLaporan()
         {
             loadform(new frmLaporan());
-        }
-
-        private void mainpanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        }     
 
         private void btnKeluar_Click_1(object sender, EventArgs e)
         {
@@ -90,6 +85,6 @@ namespace SIP
             {
                 sidemenuloadform(new frmSideMenu1());
             }          
-        }
+        }       
     }
 }
