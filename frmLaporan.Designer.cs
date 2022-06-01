@@ -40,7 +40,7 @@ namespace SIP
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(175, 28);
+            this.textBox1.Location = new System.Drawing.Point(175, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(278, 39);
             this.textBox1.TabIndex = 0;
