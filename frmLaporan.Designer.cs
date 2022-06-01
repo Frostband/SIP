@@ -50,16 +50,16 @@ namespace SIP
             // 
             this.transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.transaksi.BackColor = System.Drawing.SystemColors.Info;
-            this.transaksi.Location = new System.Drawing.Point(341, 113);
+            this.transaksi.Location = new System.Drawing.Point(364, 113);
             this.transaksi.Name = "transaksi";
-            this.transaksi.Size = new System.Drawing.Size(293, 39);
+            this.transaksi.Size = new System.Drawing.Size(178, 39);
             this.transaksi.TabIndex = 17;
             this.transaksi.TextChanged += new System.EventHandler(this.transaksi_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(90, 96);
+            this.label5.Location = new System.Drawing.Point(169, 84);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 32);
             this.label5.TabIndex = 18;
