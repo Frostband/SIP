@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formkoneksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formkoneksi.Designer.cs">
+      <DependentUpon>formkoneksi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,8 +152,12 @@
     <Compile Include="frmSideMenu1.Designer.cs">
       <DependentUpon>frmSideMenu1.cs</DependentUpon>
     </Compile>
+    <Compile Include="koneksi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formkoneksi.resx">
+      <DependentUpon>formkoneksi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +223,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\expand_white_inversed_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

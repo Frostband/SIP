@@ -47,9 +47,10 @@ namespace SIP
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(28, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 37);
+            this.label1.Size = new System.Drawing.Size(204, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login SIP";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -57,7 +58,7 @@ namespace SIP
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(34, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 17);
+            this.label2.Size = new System.Drawing.Size(106, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
             // 
@@ -92,7 +93,7 @@ namespace SIP
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(36, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(100, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
@@ -102,7 +103,7 @@ namespace SIP
             this.checkbxShowPas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkbxShowPas.Location = new System.Drawing.Point(132, 308);
             this.checkbxShowPas.Name = "checkbxShowPas";
-            this.checkbxShowPas.Size = new System.Drawing.Size(122, 21);
+            this.checkbxShowPas.Size = new System.Drawing.Size(183, 32);
             this.checkbxShowPas.TabIndex = 6;
             this.checkbxShowPas.Text = "Show Password";
             this.checkbxShowPas.UseVisualStyleBackColor = true;
@@ -154,7 +155,7 @@ namespace SIP
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(173)))), ((int)(((byte)(198)))));
             this.ClientSize = new System.Drawing.Size(289, 489);
@@ -174,6 +175,7 @@ namespace SIP
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -8,140 +8,85 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace SIP
 {
     public partial class frmLaporan : Form
     {
-        private bool isCollapsed;     
+       
+        MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; database = perpus;");
+
+       
         public frmLaporan()
         {
             InitializeComponent();
         }
 
-        private void btnPeminjaman_Click(object sender, EventArgs e)
+
+
+        private void frmLaporan_Load(object sender, EventArgs e)
         {
-            if (isCollapsed)
+
+        }
+
+        private void transaksi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            String id_transaksi;
+
+            id_transaksi  = transaksi.Text;
+
+            
+            try
             {
-                btnPeminjaman.Image = Resources.expand_white_inversed_36;
-                panelPeminjaman.Height += 74;
-                panelPengembalian.Location = new Point(0, 45 + 74);
-                panelPengadaan.Location = new Point(0, 90 + 74);
-                panelDenda.Location = new Point(0, 135 + 74);
-                panelInventaris.Location = new Point(0, 180 + 74);                
+                String querry = "SELECT * FROM `transaksi` WHERE id_transaksi ='" + this.transaksi.Text + "' ";
+                MySqlDataAdapter sda = new MySqlDataAdapter(querry, conn);
+
+                DataTable dTable = new DataTable();
+                sda.Fill(dTable);
+
+                if (dTable.Rows.Count > 0)
+                {
+                    id_transaksi = transaksi.Text;
+
+
+                    MessageBox.Show("Berhasil ");
+                    transaksi.Clear();
+                    dataGridView1.DataSource = dTable;
+                }
+                else
+                {
+                    MessageBox.Show("ID Transaksi salah", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    transaksi.Clear();
+                   
+
                     
-                isCollapsed = false;
-                    
-                
+                }
             }
-            else
+            catch
             {
-                btnPeminjaman.Image = Resources.expand_white_36;
-                panelPeminjaman.Height -= 74;
-                panelPengembalian.Location = new Point(0, 45);
-                panelPengadaan.Location = new Point(0, 90);
-                panelDenda.Location = new Point(0, 135);
-                panelInventaris.Location = new Point(0, 180);
-
-                isCollapsed = true;
-                
+                MessageBox.Show("Error");
             }
+            finally
+            {
+                conn.Close();
+            }
+
+
+        }
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
-        private void btnPengembalian_Click(object sender, EventArgs e)
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (isCollapsed)
-            {
-                btnPengembalian.Image = Resources.expand_white_inversed_36;
-                panelPengembalian.Height += 74;                
-                panelPengadaan.Location = new Point(0, 90 + 74);
-                panelDenda.Location = new Point(0, 135 + 74);
-                panelInventaris.Location = new Point(0, 180 + 74);
 
-                isCollapsed = false;
-
-
-            }
-            else
-            {
-                btnPengembalian.Image = Resources.expand_white_36;
-                panelPengembalian.Height -= 74;
-                panelPengadaan.Location = new Point(0, 90);
-                panelDenda.Location = new Point(0, 135);
-                panelInventaris.Location = new Point(0, 180);
-
-                isCollapsed = true;
-
-            }
-        }
-
-        private void btnPengadaan_Click(object sender, EventArgs e)
-        {
-            if (isCollapsed)
-            {
-                btnPengadaan.Image = Resources.expand_white_inversed_36;
-                panelPengadaan.Height += 74;                
-                panelDenda.Location = new Point(0, 135 + 74);
-                panelInventaris.Location = new Point(0, 180 + 74);
-
-                isCollapsed = false;
-
-
-            }
-            else
-            {
-                btnPengadaan.Image = Resources.expand_white_36;
-                panelPengadaan.Height -= 74;                
-                panelDenda.Location = new Point(0, 135);
-                panelInventaris.Location = new Point(0, 180);
-
-                isCollapsed = true;
-
-            }
-        }
-
-        private void btnDenda_Click(object sender, EventArgs e)
-        {
-            if (isCollapsed)
-            {
-                btnDenda.Image = Resources.expand_white_inversed_36;
-                panelDenda.Height += 74;                
-                panelInventaris.Location = new Point(0, 180 + 74);
-
-                isCollapsed = false;
-
-
-            }
-            else
-            {
-                btnDenda.Image = Resources.expand_white_36;
-                panelDenda.Height -= 74;                
-                panelInventaris.Location = new Point(0, 180);
-
-                isCollapsed = true;
-
-            }
-        }
-
-        private void btnInventaris_Click(object sender, EventArgs e)
-        {
-            if (isCollapsed)
-            {
-                btnInventaris.Image = Resources.expand_white_inversed_36;
-                panelInventaris.Height += 74;                
-
-                isCollapsed = false;
-
-
-            }
-            else
-            {
-                btnInventaris.Image = Resources.expand_white_36;
-                panelInventaris.Height -= 74;               
-
-                isCollapsed = true;
-
-            }
         }
     }   
 }

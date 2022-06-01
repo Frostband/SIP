@@ -85,6 +85,11 @@ namespace SIP
             {
                 sidemenuloadform(new frmSideMenu1());
             }          
-        }       
+        }
+
+        private void mainpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

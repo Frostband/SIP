@@ -14,7 +14,7 @@ namespace SIP
 {
     public partial class frmLogin : Form
     {
-        MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; database = sip;");
+        MySqlConnection conn = new MySqlConnection("server = localhost; uid = root; database = perpus;");
         
 
         public frmLogin()
@@ -43,7 +43,7 @@ namespace SIP
 
             try
             {
-                String querry = "SELECT * FROM staff WHERE username = '"+txtUsername.Text+"' AND password = '"+txtPassword.Text+"'";
+                String querry = "SELECT * FROM admin WHERE username = '"+txtUsername.Text+"' AND password = '"+txtPassword.Text+"'";
                 MySqlDataAdapter sda = new MySqlDataAdapter(querry, conn);
 
                 DataTable dTable = new DataTable();
@@ -111,6 +111,16 @@ namespace SIP
                 e.SuppressKeyPress = true;
                 txtPassword.Focus();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

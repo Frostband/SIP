@@ -22,5 +22,10 @@ namespace SIP
             var mainForm = Application.OpenForms.OfType<frmDashboard>().Single();
             mainForm.btnLaporan();
         }
+
+        private void frmSideMenu2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

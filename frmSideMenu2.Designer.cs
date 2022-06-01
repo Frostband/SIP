@@ -41,7 +41,7 @@ namespace SIP
             this.btnLaporan.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLaporan.Image = global::SIP.Properties.Resources.book_white_36;
             this.btnLaporan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLaporan.Location = new System.Drawing.Point(0, 0);
+            this.btnLaporan.Location = new System.Drawing.Point(0, 12);
             this.btnLaporan.Name = "btnLaporan";
             this.btnLaporan.Size = new System.Drawing.Size(178, 35);
             this.btnLaporan.TabIndex = 2;
@@ -51,10 +51,10 @@ namespace SIP
             // 
             // frmSideMenu2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(54)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(178, 159);
+            this.ClientSize = new System.Drawing.Size(178, 191);
             this.Controls.Add(this.btnLaporan);
             this.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -62,6 +62,7 @@ namespace SIP
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmSideMenu2";
             this.Text = "frmSideMenu";
+            this.Load += new System.EventHandler(this.frmSideMenu2_Load);
             this.ResumeLayout(false);
 
         }
