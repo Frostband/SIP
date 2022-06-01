@@ -73,7 +73,7 @@ namespace SIP
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(104, 46);
             this.btnSubmit.TabIndex = 20;
-            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.Text = "Lihat";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 

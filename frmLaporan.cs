@@ -54,7 +54,7 @@ namespace SIP
                     id_transaksi = transaksi.Text;
 
 
-                    MessageBox.Show("Berhasil ");
+                    MessageBox.Show("Lihat catatan laporan ");
                     transaksi.Clear();
                     dataGridView1.DataSource = dTable;
                 }
