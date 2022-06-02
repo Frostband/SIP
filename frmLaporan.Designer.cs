@@ -53,9 +53,9 @@ namespace SIP
             // 
             this.transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.transaksi.BackColor = System.Drawing.SystemColors.Info;
-            this.transaksi.Location = new System.Drawing.Point(246, 109);
+            this.transaksi.Location = new System.Drawing.Point(263, 109);
             this.transaksi.Name = "transaksi";
-            this.transaksi.Size = new System.Drawing.Size(234, 39);
+            this.transaksi.Size = new System.Drawing.Size(217, 39);
             this.transaksi.TabIndex = 17;
             this.transaksi.TextChanged += new System.EventHandler(this.transaksi_TextChanged);
             // 
