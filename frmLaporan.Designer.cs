@@ -34,6 +34,8 @@ namespace SIP
             this.label5 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnsemua = new System.Windows.Forms.Button();
+            this.btnhapus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,7 +71,7 @@ namespace SIP
             // 
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnSubmit.Location = new System.Drawing.Point(320, 171);
+            this.btnSubmit.Location = new System.Drawing.Point(415, 171);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(104, 46);
             this.btnSubmit.TabIndex = 20;
@@ -87,11 +89,35 @@ namespace SIP
             this.dataGridView1.Size = new System.Drawing.Size(440, 123);
             this.dataGridView1.TabIndex = 21;
             // 
+            // btnsemua
+            // 
+            this.btnsemua.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnsemua.Location = new System.Drawing.Point(233, 142);
+            this.btnsemua.Name = "btnsemua";
+            this.btnsemua.Size = new System.Drawing.Size(102, 46);
+            this.btnsemua.TabIndex = 22;
+            this.btnsemua.Text = "Semua";
+            this.btnsemua.UseVisualStyleBackColor = false;
+            this.btnsemua.Click += new System.EventHandler(this.btnsemua_Click_1);
+            // 
+            // btnhapus
+            // 
+            this.btnhapus.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnhapus.Location = new System.Drawing.Point(115, 142);
+            this.btnhapus.Name = "btnhapus";
+            this.btnhapus.Size = new System.Drawing.Size(112, 46);
+            this.btnhapus.TabIndex = 23;
+            this.btnhapus.Text = "Hapus";
+            this.btnhapus.UseVisualStyleBackColor = false;
+            this.btnhapus.Click += new System.EventHandler(this.btnhapus_Click_1);
+            // 
             // frmLaporan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 438);
+            this.Controls.Add(this.btnhapus);
+            this.Controls.Add(this.btnsemua);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label5);
@@ -116,5 +142,7 @@ namespace SIP
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnsemua;
+        private System.Windows.Forms.Button btnhapus;
     }
 }
