@@ -42,26 +42,27 @@ namespace SIP
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(175, 2);
+            this.textBox1.Location = new System.Drawing.Point(-3, -2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(278, 39);
+            this.textBox1.Size = new System.Drawing.Size(638, 39);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "                        LAPORAN";
+            this.textBox1.Text = "LAPORAN";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // transaksi
             // 
             this.transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.transaksi.BackColor = System.Drawing.SystemColors.Info;
-            this.transaksi.Location = new System.Drawing.Point(364, 113);
+            this.transaksi.Location = new System.Drawing.Point(246, 109);
             this.transaksi.Name = "transaksi";
-            this.transaksi.Size = new System.Drawing.Size(178, 39);
+            this.transaksi.Size = new System.Drawing.Size(234, 39);
             this.transaksi.TabIndex = 17;
             this.transaksi.TextChanged += new System.EventHandler(this.transaksi_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(169, 84);
+            this.label5.Location = new System.Drawing.Point(83, 88);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 32);
             this.label5.TabIndex = 18;
@@ -71,9 +72,10 @@ namespace SIP
             // 
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnSubmit.Location = new System.Drawing.Point(415, 171);
+            this.btnSubmit.Font = new System.Drawing.Font("Nirmala UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.Location = new System.Drawing.Point(530, 109);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(104, 46);
+            this.btnSubmit.Size = new System.Drawing.Size(58, 31);
             this.btnSubmit.TabIndex = 20;
             this.btnSubmit.Text = "Lihat";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -82,17 +84,17 @@ namespace SIP
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(79, 223);
+            this.dataGridView1.Location = new System.Drawing.Point(89, 154);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 123);
+            this.dataGridView1.Size = new System.Drawing.Size(314, 123);
             this.dataGridView1.TabIndex = 21;
             // 
             // btnsemua
             // 
             this.btnsemua.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.btnsemua.Location = new System.Drawing.Point(233, 142);
+            this.btnsemua.Location = new System.Drawing.Point(435, 154);
             this.btnsemua.Name = "btnsemua";
             this.btnsemua.Size = new System.Drawing.Size(102, 46);
             this.btnsemua.TabIndex = 22;
@@ -103,9 +105,9 @@ namespace SIP
             // btnhapus
             // 
             this.btnhapus.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnhapus.Location = new System.Drawing.Point(115, 142);
+            this.btnhapus.Location = new System.Drawing.Point(435, 231);
             this.btnhapus.Name = "btnhapus";
-            this.btnhapus.Size = new System.Drawing.Size(112, 46);
+            this.btnhapus.Size = new System.Drawing.Size(102, 46);
             this.btnhapus.TabIndex = 23;
             this.btnhapus.Text = "Hapus";
             this.btnhapus.UseVisualStyleBackColor = false;
